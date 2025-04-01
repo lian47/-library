@@ -15,4 +15,14 @@ public class GrafoLivros {
         grafo.get(livro1).add(livro2);
         grafo.get(livro2).add(livro1);
     }
+
+    public Set<Livro> obterRecomendacoes(Livro livro) {
+       return grafo.getOrDefault(livro, Collections.emptySet());
+    }
+
+    public void mostrarGrafo() {
+        for (Map.Entry<Livro, Set<Livro>> entry : grafo.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+    }
 }

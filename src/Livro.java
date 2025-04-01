@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Objects;
 
 public class Livro {
     private String titulo;

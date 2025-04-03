@@ -19,7 +19,7 @@ public class Livro {
     public String getAutor() {
         return autor;
     }
-
+    //1
     //@Override é uma anotação (annotation) usada para indicar que um métod está sendo sobrescrito (overridden) de uma superclasse ou de uma interface que a classe está implementando
     //!= verifica se dois valores sao diferetes
     @Override
